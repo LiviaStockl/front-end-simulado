@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de evento</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <h1>Gerenciador de eventos</h1>
+
+        <nav>
+            <a href="cadastro-palestrante.html">
+                Cadastro de Palestrantes
+            </a>
+
+            <a href="cadastro-evento.html">
+                Cadastro de Eventos
+            </a>
+
+            <a href="index.html">
+                Gerenciador de Eventos
+            </a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h2 id="titulo-formulario">
+            Cadastro de evento
+        </h2>
+
+
+        <form id="form-evento">
+
+            <div class="campo">
+
+                <label for="nome">
+                    Nome
+                </label>
+
+                <input type="text" id="nome" required>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="descricao">
+                    Descrição
+                </label>
+
+                <input type="text" id="descricao" required>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="local">
+                    Local
+                </label>
+
+                <input type="text" id="local" required>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="data">
+                    Data
+                </label>
+
+                <input type="datetime-local" id="data" required>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="palestrante">
+                    Palestrante
+                </label>
+
+                <select id="palestrante" required>
+
+                    <option value="">
+                        Selecione um palestrante
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button type="submit" class="botao-principal">
+                Cadastrar
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <script src="/js/cadastro.evento.js"></script>
+
+</body>
+
+</html>
